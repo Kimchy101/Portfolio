@@ -1,0 +1,23 @@
+*
+ font-weight: lighter
+a
+ color: #6b6b6b
+
+.transcontainer
+ transition: all .3s cubic-bezier(0.55, 0, .1, 1);
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+
+@import '~vuetify/src/stylus/settings/_variables'
+
+// reference link for variables -> https://github.com/vuetifyjs/vuetify/blob/dev/src/stylus/settings/_theme.styl
+
+$material-dark.background = #111111
+$material-dark.cards = #252525
+$material-dark.text.secondary = #000000
+
+@import '~vuetify/src/stylus/main.styl'
