@@ -5,6 +5,7 @@
       v-model="drawer"
       fixed
       app
+      width=220
     >
       <v-list>
 
