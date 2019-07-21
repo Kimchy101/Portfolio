@@ -1,5 +1,5 @@
 {
-  "name": "hellovue",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "My first vue experience",
   "author": "Andrew Choi",
@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@bazzite/nuxt-netlify": "^0.1.1",
     "cross-env": "^5.2.0",
     "express": "^4.17.1",
     "nuxt": "^2.8.1",
