@@ -44,14 +44,11 @@ module.exports = {
   modules: [
     '@bazzite/nuxt-netlify',
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
   ],
 
-  axios: [
-    proxyHeaders = false,
-    credentials = false
-  ],
-  
+  router: {
+    base: '/app/'
+  },
 
   /*
   ** Build configuration

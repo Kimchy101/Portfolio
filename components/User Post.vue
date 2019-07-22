@@ -16,11 +16,10 @@ export default {
     created() {
         this.name = 'george'
         this.quote = 'I ate a banana'
-        this.$axios.$get("/user")
-            .then((res) => {this.name = res})
-            .catch((res) => console.log(res + ""))
-
-        console.log(this.name)
+        console.log(this.$axios.defaults.baseURL)
+        this.$axios.get('/userPosts')
+            .then((res) => {this.name = res.data.name; this.quote = res.data.quote})
+            .catch((res) => console.log(res))
     }
 }
 </script>
