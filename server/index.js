@@ -1,5 +1,6 @@
 
 const express = require('express')
+const cors = require('cors')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
@@ -22,14 +23,21 @@ async function start() {
     await builder.build()
   }
 
+  const clientURL = `http://${host}:${port}`
+
+  const corsOptions = {origin: clientURL + 'userQuotes', optionsSuccessStatus: 200}
   // Give nuxt middleware to express
-  app.use(nuxt.render)
+  app.use(cors(), nuxt.render)
+  
+  app.get("/user", (req, res, next) => {console.log("success"); res.send("Carl")})
 
   // Listen the server
   app.listen(port, host)
   consola.ready({
-    message: `Server listening on http://${host}:${port}`,
+    message: `Server listening on ${clientURL}`,
     badge: true
   })
+
+
 }
 start()

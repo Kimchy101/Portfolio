@@ -42,8 +42,16 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@bazzite/nuxt-netlify'
+    '@bazzite/nuxt-netlify',
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+
+  axios: [
+    proxyHeaders = false,
+    credentials = false
+  ],
+  
 
   /*
   ** Build configuration
