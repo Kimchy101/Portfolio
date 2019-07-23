@@ -50,6 +50,15 @@ module.exports = {
     base: '/app/'
   },
 
+  netlify: {
+    redirects: [
+      {
+        from: '/',
+        to: 'app'
+      }
+    ]
+  },
+
   /*
   ** Build configuration
   */
