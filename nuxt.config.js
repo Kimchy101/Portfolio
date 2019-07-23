@@ -56,7 +56,17 @@ module.exports = {
         from: '/',
         to: '/app'
       }
-    ]
+    ],
+
+    headers: {
+      '/app/*': [
+        'Access-Control-Allow-Origin: *',
+        `X-Build: ${pkg.version}`
+      ],
+      '/favicon.ico': [
+        'Cache-Control: public, max-age=86400'
+      ]
+    }
   },
 
   /*
