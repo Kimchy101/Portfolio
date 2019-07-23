@@ -1,7 +1,7 @@
 const pkg = require('./package')
 const hooks = require('./hooks')
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
@@ -57,6 +57,7 @@ module.exports = {
   },
 
   router: {
+    base: '/app/'
   },
   hooks: hooks(this),
 
