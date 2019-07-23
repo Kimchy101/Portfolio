@@ -1,5 +1,5 @@
 const pkg = require('./package')
-
+const hooks = require('./hooks')
 module.exports = {
   mode: 'spa',
 
@@ -49,25 +49,7 @@ module.exports = {
   router: {
     base: '/app/'
   },
-
-  netlify: {
-    redirects: [
-      {
-        from: '/',
-        to: '/app/index.html'
-      }
-    ],
-
-    headers: {
-      '/app/*': [
-        'Access-Control-Allow-Origin: *',
-        `X-Build: ${pkg.version}`
-      ],
-      '/favicon.ico': [
-        'Cache-Control: public, max-age=86400'
-      ]
-    }
-  },
+  hooks: hooks(this),
 
   /*
   ** Build configuration
