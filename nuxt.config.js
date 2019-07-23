@@ -54,7 +54,7 @@ module.exports = {
     redirects: [
       {
         from: '/',
-        to: 'app'
+        to: '/app'
       }
     ]
   },
