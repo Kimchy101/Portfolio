@@ -17,7 +17,7 @@ export default {
         this.name = 'george'
         this.quote = 'I ate a banana'
         console.log(this.$axios.defaults.baseURL)
-        this.$axios.get('/userPosts')
+        this.$axios.get('/api/userPosts')
             .then((res) => {this.name = res.data.name; this.quote = res.data.quote})
             .catch((res) => console.log(res))
     }

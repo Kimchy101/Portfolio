@@ -1,5 +1,4 @@
 const pkg = require('./package')
-const hooks = require('./hooks')
 module.exports = {
   mode: 'spa',
 
@@ -46,20 +45,8 @@ module.exports = {
     '@nuxtjs/axios',
   ],
 
-  netlify: {
-    redirects: [
-      {
-        from: '/*',
-        to: '/index.html',
-        status: 200
-      }
-    ]
-  },
+  serverMiddleware: ['~/api/index.js'],
 
-  router: {
-    base: '/app/'
-  },
-  hooks: hooks(this),
 
   /*
   ** Build configuration

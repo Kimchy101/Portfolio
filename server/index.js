@@ -1,5 +1,4 @@
 const express = require('express')
-const cors = require('cors')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
@@ -23,13 +22,6 @@ async function start() {
   }
 
   const serverIP = `http://${host}:${port}`
-  const corsOptions = {origin: serverIP, optionsSuccessStatus: 200}
-
-  app.get('/userPosts', cors(), 
-    (req, res, next) => {
-      res.send({name: 'Andrew', quote: 'I don\'t like fruit'})
-    }
-  )
 
   // Give nuxt middleware to express
   app.use(nuxt.render)
