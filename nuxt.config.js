@@ -53,8 +53,8 @@ module.exports = {
   netlify: {
     redirects: [
       {
-        from: '/app',
-        to: '/'
+        from: '/',
+        to: '/app'
       }
     ]
   },
