@@ -46,8 +46,17 @@ module.exports = {
     '@nuxtjs/axios',
   ],
 
+  netlify: {
+    redirects: [
+      {
+        from: '/*',
+        to: '/index.html',
+        status: 200
+      }
+    ]
+  },
+
   router: {
-    base: '/app/'
   },
   hooks: hooks(this),
 
