@@ -45,7 +45,12 @@ module.exports = {
     '@nuxtjs/axios',
   ],
 
+  axios: {
+    baseURL: ''
+  },
+
   serverMiddleware: [
+    'redirect-ssl',
     { path: '/api', handler: '~/api/index.js' },
   ],
 

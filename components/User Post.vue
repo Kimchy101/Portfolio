@@ -14,12 +14,15 @@ export default {
         }
     },
     created() {
-        this.name = 'george'
-        this.quote = 'I ate a banana'
-        console.log(this.$axios.defaults.baseURL)
+        this.name = 'loading name'
+        this.quote = 'loading quotes'
+        // this.$axios.defaults.baseURL = ''
         this.$axios.get('/api/userPosts')
             .then((res) => {this.name = res.data.name; this.quote = res.data.quote})
-            .catch((res) => console.log(res))
+            .catch((res) => {this.name = res})
+        // this.$axios.get('https://jsonplaceholder.typicode.com/todos/1')
+        //     .then((res) => this.name = res.data.id)
+        //     .catch((res) => this.name = res)
     }
 }
 </script>
