@@ -3,22 +3,20 @@ const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
-const cors = require('cors')
 
-function updateDatabase(data) {
-  // update the database
-  return newValue;
-}
-
-app.use(bodyParser);
-// app.post('/updatestate', (res, req) => {
-//   const newValue = updateDatabase(res.body);
-//   req.json(newValue);
+const router = express.Router();
+// router.get('/', (req, res) => {
+//   res.writeHead(200, { 'Content-Type': 'text/html' });
+//   res.write('<h1>Hello from Express.js!</h1>');
+//   res.end();
 // });
-app.get('/userPosts', cors(),
-    (req, res, next) => {
-      res.json({name: 'Andrew', quote: 'I don\'t like fruit'})
-    }
-)
 
+express.get('/', (req, res) => res.send('Hello World'))
+// router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
+// router.post('/', (req, res) => res.json({ postBody: req.body }));
+
+app.use(bodyParser.json());
+app.use('/.netlify/functions/server', router);  // path must route to lambda
+
+module.exports = app;
 module.exports.handler = serverless(app);
