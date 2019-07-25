@@ -14,7 +14,7 @@ app.use(bodyParser);
 //   const newValue = updateDatabase(res.body);
 //   req.json(newValue);
 // });
-app.get('/api/userPosts', cors(), 
+app.get('/userPosts', 
     (req, res, next) => {
       res.send({name: 'Andrew', quote: 'I don\'t like fruit'})
     }

@@ -46,7 +46,7 @@ module.exports = {
   ],
 
   axios: {
-    baseURL: ''
+    baseURL: '.netlify/functions/server'
   },
 
   /*
