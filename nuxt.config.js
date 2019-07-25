@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const config = require('./nuxt.config.js')
 module.exports = {
   mode: 'spa',
 
@@ -46,8 +47,12 @@ module.exports = {
   ],
 
   axios: {
-    baseURL: '.netlify/functions/server'
+    baseURL: (config.dev)? 'netlify_functions/server' : '.netlify/functions/server'
   },
+
+  serverMiddleware: [
+    '~/netlify_functions/server.js'
+  ],
 
   /*
   ** Build configuration

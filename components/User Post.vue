@@ -18,7 +18,7 @@ export default {
         this.quote = 'loading quotes'
         this.$axios.get('/userPosts')
             .then((res) => {this.name = res.data.name; this.quote = res.data.quote})
-            .catch((res) => {this.name = res})
+            .catch((res) => {})
     }
 }
 </script>
