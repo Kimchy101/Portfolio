@@ -3,8 +3,6 @@ const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
-const config = require('../nuxt.config.js')
-
 const router = express.Router();
 
 router.get('/userPosts', (req, res) => {
@@ -15,4 +13,4 @@ app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
 
 module.exports = app;
-module.exports.handler = (config.dev)? module.exports.handler : serverless(app);
+module.exports.handler = (process.env.NODE_ENV === 'production')? serverless(app) : module.exports.handler;
