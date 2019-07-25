@@ -3,6 +3,7 @@ const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 function updateDatabase(data) {
   // update the database
@@ -14,7 +15,7 @@ app.use(bodyParser);
 //   const newValue = updateDatabase(res.body);
 //   req.json(newValue);
 // });
-app.get('/userPosts', 
+app.get('/userPosts', cors(),
     (req, res, next) => {
       res.send({name: 'Andrew', quote: 'I don\'t like fruit'})
     }
