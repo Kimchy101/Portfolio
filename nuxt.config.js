@@ -2,6 +2,7 @@ const pkg = require('./package')
 const config = require('./nuxt.config.js')
 module.exports = {
   mode: 'spa',
+  dev: false,
 
   /*
   ** Headers of the page
@@ -51,7 +52,7 @@ module.exports = {
   },
 
   serverMiddleware:
-    (process.env.NODE_ENV === 'production')? [] : ['~/netlify_functions/server.js'],
+    (false)? ['~/netlify_functions/server.js'] : [],
 
   /*
   ** Build configuration
