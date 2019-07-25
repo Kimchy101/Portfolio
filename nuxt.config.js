@@ -52,7 +52,7 @@ module.exports = {
   },
 
   serverMiddleware:
-    (false)? ['~/netlify_functions/server.js'] : [],
+    ['~/netlify_functions/server.js'],
 
   /*
   ** Build configuration

@@ -13,4 +13,4 @@ app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
 
 module.exports = app;
-module.exports.handler = (process.env.NODE_ENV === 'production')? serverless(app) : module.exports.handler;
+module.exports.handler = (true)? serverless(app) : module.exports.handler;
