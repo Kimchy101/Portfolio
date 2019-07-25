@@ -17,7 +17,7 @@ app.use(bodyParser);
 // });
 app.get('/userPosts', cors(),
     (req, res, next) => {
-      res.send({name: 'Andrew', quote: 'I don\'t like fruit'})
+      res.json({name: 'Andrew', quote: 'I don\'t like fruit'})
     }
 )
 
