@@ -47,12 +47,11 @@ module.exports = {
   ],
 
   axios: {
-    baseURL: (config.dev)? 'netlify_functions/server' : '.netlify/functions/server'
+    baseURL: '.netlify/functions/server'
   },
 
-  serverMiddleware: [
-    '~/netlify_functions/server.js'
-  ],
+  serverMiddleware:
+    (process.env.NODE_ENV === 'production')? [] : ['~/netlify_functions/server.js'],
 
   /*
   ** Build configuration
