@@ -11,7 +11,7 @@ const router = express.Router();
 //   res.end();
 // });
 
-express.get('/', (req, res) => res.send('Hello World'))
+router.get('/', (req, res) => res.json('Hello World'))
 // router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 // router.post('/', (req, res) => res.json({ postBody: req.body }));
 
