@@ -2,24 +2,16 @@
   <v-layout column align-center fixed>
     <canvas id="cube">
     </canvas>
-    <h1>Andrew <sub>C h o i</sub></h1>
-    <h2 v-html="caption"></h2>
+    <p class="display-2">AndrewChoi<sub>.info</sub></p>
+    <p class="headline font-weight-thin grey--text" v-html="caption"></p>
   </v-layout>
 </template>
 
 <style scoped>
-h1
+p
 {
-  font-size: 50px;
   position:relative;
   bottom: 75px;
-  font-weight: 500;
-}
-h2
-{
-  position:relative;
-  bottom:75px;
-  color:grey
 }
 </style>
 

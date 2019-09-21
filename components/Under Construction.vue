@@ -4,8 +4,9 @@
     <div>
       <v-icon size="40">build</v-icon>
     </div>
-    <p class="mb-0">{{item}} Under Construction <br></p>
-    <small class="font-italic">{{subtext}}</small>
+    <div class="subtitle-1">{{item}} Under Construction <br>
+        <small class="font-italic">{{subtext}}</small>
+    </div>
 
     </v-flex>
 </template>

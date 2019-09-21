@@ -50,7 +50,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2018 cube4.org</span>
+      <span>&copy; 2019 andrewchoi.info</span>
     </v-footer>
   </v-app>
 </template>
@@ -66,10 +66,9 @@
           { icon: 'games', title: 'Games', to: '/games', color: 'green'},
           { icon: 'movies', title: 'Movies', to: '/movies', color: 'red darken-3'},
           { icon: 'chat', title: 'Blog', to: '/blog', color: 'blue'},
-          { icon: 'contact_mail', title: 'Contact', to: '/contact', color: 'brown' },
-          { icon: 'contact_mail', title: 'User Quotes', to: '/userQuotes', color: 'brown' },          
+          { icon: 'contact_mail', title: 'Contact', to: '/contact', color: 'brown' }         
         ],
-        title: 'CUBE<sub>4</sub>',
+        title: 'AndrewChoi<sub>.info</sub>',
         logoCaption: '<br>'
       }
     },
