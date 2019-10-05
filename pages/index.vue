@@ -4,11 +4,10 @@
     justify-center
     align-center
     class="transcontainer">
-      <v-card>
+      <v-card class="pa-2">
         <v-layout align-center column>
-          <v-card-title class="display-1 light-blue--text text-xs-center">Hi! My name is Andrew Choi.</v-card-title>
-      
-          <img width="200" class="justify-content" src="~/static/profile.png">
+          <v-card-title class="display-1 text-xs-center greeting">Hi! My name is Andrew Choi.</v-card-title>
+            <img width="80%" class="justify-content" src="~/static/profile.png">
           <v-card-text class="headline font-weight-light text-xs-center">
               I'm a highschooler who specializes in coding for websites and video games.<br>
               I take great pride in what I create.<br>
@@ -28,3 +27,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .greeting
+  {
+    color: #e57373;
+  }
+  img
+  {
+    max-width: 250px
+  }
+</style>

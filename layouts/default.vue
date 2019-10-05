@@ -50,7 +50,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2019 andrewchoi.info</span>
+      <span>&copy; 2019 AndrewChoi.info</span>
     </v-footer>
   </v-app>
 </template>
@@ -64,8 +64,8 @@
         navTiles: [
           { icon: 'apps', title: 'Home', to: '/' , color: 'red lighten-2'},
           { icon: 'games', title: 'Games', to: '/games', color: 'green'},
-          { icon: 'movies', title: 'Movies', to: '/movies', color: 'red darken-3'},
-          { icon: 'chat', title: 'Blog', to: '/blog', color: 'blue'},
+          { icon: 'web', title: 'Websites', to: '/websites', color: 'red darken-3'},
+          { icon: 'code', title: 'Code Tools', to: '/tools', color: 'blue'},
           { icon: 'contact_mail', title: 'Contact', to: '/contact', color: 'brown' }         
         ],
         title: 'AndrewChoi<sub>.info</sub>',
