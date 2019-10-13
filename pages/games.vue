@@ -3,30 +3,77 @@
         <v-card class="pa-2 ma-2">
             <v-layout align-center column>
             <v-card-title class="display-2 green--text font-weight-light"><i>Robot Tale</i></v-card-title>
-        
-            <img class="justify-content" src="data:image/png;base64,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">
+            <UnderConstruction item="Section"/>
             <v-card-text class="bodyTxt">
                 This was a major project during my beginning years of highschool.
-                It was the catalyst for my experiences with the Unity engine and the C# language.
+                It was the catalyst for my experiences with the <a href="https://unity.com/">Unity</a> engine and the C# language.
                 Out of all the projects I have worked on, this was likely the most time consuming.
-                Here is a quick file search of all the scripts coded:
+                Here is a quick file search of all the scripts coded for the project:
+            </v-card-text>
+            <img style="max-width: 500px" class="sizedContent" src="~/static/robot_tale_scripts.png">
+            <v-card-text class="bodyTxt">
+                In total there are 158 .cs files, not including the ones deleted over time.
+            </v-card-text>
+            </v-layout>
+        </v-card>
+                <v-card class="pa-2 ma-2">
+            <v-layout align-center column>
+            <v-card-title class="display-2 green--text font-weight-light"><i>Hot Hops</i></v-card-title>
+            <img style="max-width: 500px" class="sizedContent" src="~/static/hot_hops_img.png">
+        
+            <v-card-text class="bodyTxt">
+                This was a small project during a freshman year class where I my team was assigned to develop a vidoe game. 
+                Unlike many of the other games listed here, this game was complete and is still available for download.
+                <br><br>
+                You can get the game via this <a href='https://drive.google.com/file/d/1qYiRgzyXv6T9OSDOyFPyUnAUPeyjuvpZ/view?usp=sharing' download>link</a>.
+                <br>
+                Controls are simple: space key to jump and enter to play/restart. Avoid the fox.
             </v-card-text>
             </v-layout>
         </v-card>
         <v-card class="pa-2 ma-2">
             <v-layout align-center column>
-            <v-card-title class="display-2 green--text font-weight-light"><i>Rocket Mash</i></v-card-title>
+            <v-card-title class="display-2 green--text text-xs-center font-weight-light"><i>Rocket Mash</i></v-card-title>
+
+            <v-carousel class="sizedContent">
+                <v-carousel-item>
+                    <p class="carouselText">Early development</p>
+                    <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_old.png'>
+                </v-carousel-item>
+                <v-carousel-item>
+                    <p class="carouselText">Cutscene</p>
+                    <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_decision.png'>
+                </v-carousel-item>
+                <v-carousel-item>
+                    <p class="carouselText">Later development</p>
+                    <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_level_one.png'>
+                </v-carousel-item>
+                <v-carousel-item>
+                    <p class="carouselText">Old UI</p>
+                    <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_ui.png'>
+                </v-carousel-item>
+            </v-carousel>
         
-            <img class="justify-content" src="data:image/png;base64,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">
             <v-card-text class="bodyTxt">
                 Of all my projects, this was probably the one that varied the most.
                 During my middle school years, I picked up on a tool called Clickteam Fusion 2.5.
-                It was a simple, code-free game engine.
+                It is a simple, code-free game engine.
                 This tool was my main introduction to programming.
-                I have 951 hours on record for the software.
-                For the most part, Rocket Mash is the accumulation of these hours.
+                In total I have 951 hours on record for the software.
+            </v-card-text>
+            <img class="sizedContent" style="max-width: 300px" src="~/static/fusion_hours.png">
+            <v-card-text class="bodyTxt">
+                Rocket Mash is the accumulation of these hours.
                 It represents my early experimentation and struggles in game design.
                 For all its flaws, the game is the foundation of my game developer experience.
+            </v-card-text>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Udk3hAFYPy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <v-card-text class="bodyTxt text-xs-center">
+                A video from an earlier stage of development.
+            </v-card-text>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CTEYNMktgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <v-card-text class="bodyTxt text-xs-center">
+                And another from a later stage of development.
             </v-card-text>
             </v-layout>
         </v-card>
@@ -34,5 +81,36 @@
 </template>
 
 <style scoped>
-    
+    .sizedContent
+    {
+        width: 80%;
+    }
+    .rmsImg
+    {
+        height: 100%;
+        width: auto;
+    }
+    .carouselText
+    {
+        position: absolute;
+        left: 10px;
+        bottom: 35px;
+        font-size: 40px;
+        font-weight: 200;
+        color: lightgray;
+    }
 </style>
+<script>
+import UnderConstruction from '~/components/Under Construction.vue'
+export default {
+
+      components: {
+    UnderConstruction
+  },
+    data() {
+        return {
+            rocketMashImages: [{src:"~/static/rocket_mash_screenshots/rms_old.png", caption:"Hello World"}, {src:"rms_decision.png", caption: "H"}]
+        }
+    }
+}
+</script>

@@ -10,7 +10,7 @@
                     <a href="https://nuxtjs.org/">Nuxt</a>.
                 It is a single page application built and deployed at <a href="https://www.netlify.com/">Netlify</a>, 
                 which accesses GitHub for the building process.
-                <br><br>You can view the repository <a href="https://github.com/Kimchy101/Portfolio">here.</a>
+                <br><br>You can view the repository <a href="https://github.com/Kimchy101/Portfolio">here</a>.
 
             </v-card-text>
             </v-layout>
