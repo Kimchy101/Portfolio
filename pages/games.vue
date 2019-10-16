@@ -22,7 +22,7 @@
             <img style="max-width: 500px" class="sizedContent" src="~/static/hot_hops_img.png">
         
             <v-card-text class="bodyTxt">
-                This was a small project during a freshman year class where I my team was assigned to develop a vidoe game. 
+                This was a small project during a freshman year class where I my team was assigned to develop a video game. 
                 Unlike many of the other games listed here, this game was complete and is still available for download.
                 <br><br>
                 You can get the game via this <a href='https://drive.google.com/file/d/1qYiRgzyXv6T9OSDOyFPyUnAUPeyjuvpZ/view?usp=sharing' download>link</a>.
