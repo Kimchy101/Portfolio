@@ -10,7 +10,7 @@
                 Out of all the projects I have worked on, this was likely the most time consuming.
                 Here is a quick file search of all the scripts coded for the project:
             </v-card-text>
-            <img style="max-width: 500px" class="sizedContent" src="~/static/robot_tale_scripts.png">
+            <img width="500px" class="sizedContent" src="~/static/robot_tale_scripts.png">
             <v-card-text class="bodyTxt">
                 In total there are 158 .cs files, not including the ones deleted over time.
             </v-card-text>
@@ -19,15 +19,15 @@
                 <v-card class="pa-2 ma-2">
             <v-layout align-center column>
             <v-card-title class="display-2 green--text font-weight-light"><i>Hot Hops</i></v-card-title>
-            <img style="max-width: 500px" class="sizedContent" src="~/static/hot_hops_img.png">
+            <img width="700px" class="sizedContent" src="~/static/hot_hops_img.png">
         
             <v-card-text class="bodyTxt">
                 This was a small project during a freshman year class where I my team was assigned to develop a video game. 
-                Unlike many of the other games listed here, this game was complete and is still available for download.
+                Unlike many of the other games listed here, this game is complete and still available for download.
                 <br><br>
                 You can get the game via this <a href='https://drive.google.com/file/d/1qYiRgzyXv6T9OSDOyFPyUnAUPeyjuvpZ/view?usp=sharing' download>link</a>.
                 <br>
-                Controls are simple: space key to jump and enter to play/restart. Avoid the fox.
+                Controls are simple: "space" key to jump and "enter" key to play/restart. Avoid the fox.
             </v-card-text>
             </v-layout>
         </v-card>
@@ -49,7 +49,7 @@
                     <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_level_one.png'>
                 </v-carousel-item>
                 <v-carousel-item>
-                    <p class="carouselText">Old UI</p>
+                    <p class="carouselText">UI</p>
                     <img class="rmsImg" src='~/static/rocket_mash_screenshots/rms_ui.png'>
                 </v-carousel-item>
             </v-carousel>
@@ -61,19 +61,24 @@
                 This tool was my main introduction to programming.
                 In total I have 951 hours on record for the software.
             </v-card-text>
-            <img class="sizedContent" style="max-width: 300px" src="~/static/fusion_hours.png">
+            <img class="sizedContent" src="~/static/fusion_hours.png">
             <v-card-text class="bodyTxt">
                 Rocket Mash is the accumulation of these hours.
                 It represents my early experimentation and struggles in game design.
                 For all its flaws, the game is the foundation of my game developer experience.
+            
             </v-card-text>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Udk3hAFYPy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <v-card-text class="bodyTxt text-xs-center">
-                A video from an earlier stage of development.
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/Udk3hAFYPy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <v-card-text class="headline text-xs-center">
+                Early stage development
             </v-card-text>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CTEYNMktgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <v-card-text class="bodyTxt text-xs-center">
-                And another from a later stage of development.
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/CTEYNMktgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>            
+            <v-card-text class="headline text-xs-center">
+                Later stage development.
             </v-card-text>
             </v-layout>
         </v-card>
@@ -81,20 +86,45 @@
 </template>
 
 <style scoped>
+    .aspect-ratio
+    {
+        position: relative;
+        width: 80%;
+        max-width: 700px;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 0;
+        padding-bottom: 51%; /* The height of the item will now be 56% of the width. */
+    }
+
+    .aspect-ratio iframe
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
     .sizedContent
     {
-        width: 80%;
+        max-width: 80%;
+    }
+    .bigMaxContent
+    {
+        width: 750px;
     }
     .rmsImg
     {
         height: 100%;
-        width: auto;
+        width: 100%;
+        object-fit: cover;
     }
     .carouselText
     {
         position: absolute;
         left: 10px;
         bottom: 35px;
+        text-shadow: 4px 3px 0px black;
         font-size: 40px;
         font-weight: 200;
         color: lightgray;
