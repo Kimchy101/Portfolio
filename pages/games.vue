@@ -3,7 +3,12 @@
         <v-card class="pa-2 ma-2">
             <v-layout align-center column>
             <v-card-title class="display-2 green--text font-weight-light"><i>Robot Tale</i></v-card-title>
-            <UnderConstruction item="Section"/>
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/7FsZHeUaA1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <v-card-text class="headline text-xs-center">
+                An overview of Robot Tale's final version
+            </v-card-text>
             <v-card-text class="bodyTxt">
                 This was a major project during my beginning years of highschool.
                 It was the catalyst for my experiences with the <a href="https://unity.com/">Unity</a> engine and the C# language.
@@ -12,7 +17,27 @@
             </v-card-text>
             <img width="500px" class="sizedContent" src="~/static/robot_tale_scripts.png">
             <v-card-text class="bodyTxt">
-                In total there are 158 .cs files, not including the ones deleted over time.
+                In total there are 158 .cs files, not including the ones deleted over time. 
+                Each file can contain anywhere from around 20 to hundreds of lines of code.
+                Needless to say, it was time consuming.
+            </v-card-text>
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/yCDbrlt7lXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <v-card-text class="headline text-xs-center">
+                An earlier intro to Robot Tale
+            </v-card-text>
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/tHQfS5UmNlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <v-card-text class="headline text-xs-center">
+                An archived livestream from the game's early development
+            </v-card-text>
+            <div class="aspect-ratio">
+            <iframe src="https://www.youtube.com/embed/TWyZTpJssSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <v-card-text class="headline text-xs-center">
+                A video explaining my plans for the game
             </v-card-text>
             </v-layout>
         </v-card>
@@ -76,7 +101,7 @@
             </v-card-text>
             <div class="aspect-ratio">
             <iframe src="https://www.youtube.com/embed/CTEYNMktgFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>            
+            </div>
             <v-card-text class="headline text-xs-center">
                 Later stage development.
             </v-card-text>
