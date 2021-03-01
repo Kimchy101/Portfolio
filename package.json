@@ -19,7 +19,7 @@
     "nuxt": "^2.8.1",
     "redirect-ssl": "^1.4.0",
     "serverless-http": "^2.0.2",
-    "three": "^0.97.0",
+    "three": "^0.125.0",
     "vuetify": "^1.5.16"
   },
   "devDependencies": {
